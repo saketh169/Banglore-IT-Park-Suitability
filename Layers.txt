@@ -1,0 +1,155 @@
+================================================================================
+GEOTA - COMPLETE LAYER INVENTORY
+Date: April 8, 2026
+================================================================================
+
+6 TYPES OF LAYERS CREATED
+================================================================================
+
+1. VECTOR LAYERS
+   Raw geographic features from OpenStreetMap (points, lines, polygons)
+   
+2. RASTER LAYERS
+   Satellite data & terrain (NDVI, NDWI, NDBI, LST, DEM, Slope, Aspect)
+   
+3. PROXIMITY RASTERS
+   Distance analysis from features (Distance from roads, airport, rail, etc.)
+   
+4. RECLASSIFIED LAYERS
+   Standardized 1-5 suitability scores for all analysis layers
+   
+5. MASK LAYERS
+   Binary constraints (0/1) for hard restrictions on development
+
+6. BUFFER LAYERS
+   Vector buffers around features for constraint analysis
+
+7. FEATURE MAPS
+   Final composite output maps showing IT park suitability results
+
+================================================================================
+RASTER/IT FOLDER - SATELLITE & TERRAIN LAYERS
+================================================================================
+
+SATELLITE & SPECTRAL INDICES
+- Banglore_RGB.tif
+- NDVI.tif
+- NDWI.tif
+- NDBI.tif
+- LST.tif
+
+TERRAIN
+- DEM.tif
+- Slope.tif
+- Aspect.tif
+- HillShade.tif
+
+REFERENCE
+- land_cover_raster.tif
+- population_banglore.tif
+
+PROXIMITY ANALYSIS
+- Proximity_Roads.tif
+- Proximity_Airport.tif
+- Proximity_Railway.tif
+- Proximity_Power.tif
+- Proximity_Hospital.tif
+- Proximity_BusStop.tif
+- Proximity_Industrial.tif
+- Proximity_Amenities.tif
+- Proximity_IT_Hubs.tif
+- Proximity_Park.tif
+
+RECLASSIFIED LAYERS
+- reclass_roads.tif
+- reclass_airport.tif
+- reclass_railway.tif
+- reclass_power.tif
+- reclass_hospital.tif
+- reclass_busStop.tif
+- reclass_industrial.tif
+- reclass_amenities.tif
+- reclass_it-hubs.tif
+- reclass_NDVI.tif
+- reclass_NDWI.tif
+- reclass_NDBI.tif
+- reclass_LST.tif
+- reclass_slope.tif
+- reclass_population.tif
+- reclass_LULC.tif
+
+MASKS
+- mask_water.tif
+- mask_settlements.tif
+- mask_protected.tif
+- mask_railway.tif
+
+BUFFERS
+- Buffer_Water.gpkg
+- Buffer_Railway.gpkg
+- Buffer_Settlements.gpkg
+- Buffer-Protected.gpkg
+
+================================================================================
+VECTOR/IT FOLDER - GEOGRAPHIC FEATURES
+Extracted from: OpenStreetMap, Overpass Turbo, quickOSM
+================================================================================
+
+- roads_UTM.gpkg
+- railway_UTM.gpkg
+- railway_subway_UTM.gpkg
+- airport_UTM.gpkg
+- bus_stop_UTM.gpkg
+- power_line_UTM.gpkg
+- power_poles_UTM.gpkg
+- water_UTM.gpkg
+- Protected_Areas_UTM.gpkg
+- banglore_outline_UTM.gpkg
+- Mahadevapura IT Outline_UTM.gpkg
+- industrial_UTM.gpkg
+- Settlement_Areas_UTM.gpkg
+- hospital_UTM.gpkg
+- amenities_UTM.gpkg
+- it-hubs_UTM.gpkg
+
+================================================================================
+RASTER/FINAL ANALYSIS FOLDER - OUTPUT MAPS
+================================================================================
+
+PRIMARY OUTPUTS
+- Output Result.tif
+- Output Layer.tif
+
+COMPONENT SUITABILITY MAPS
+- accessibility_map.tif
+- business_demand_map.tif
+- environment_liveability_map.tif
+- infrastructure_reliability_map.tif
+- physical_suitability_map.tif
+
+CONSTRAINT MAPS
+- constraint_map.tif
+- constraint_mask.tif
+- constraint_proper.tif
+
+RECLASSIFIED OUTPUTS
+- reclass_accessibility.tif
+- reclass_business.tif
+- reclass_environment.tif
+- reclass_infrastructure.tif
+- reclass_physical.tif
+- reclass_result.tif
+
+RESULT VARIATIONS
+- result.tif
+- result-1.tif
+
+================================================================================
+SUMMARY - TOTAL LAYER COUNT
+================================================================================
+
+Raster/IT Layers: 45 files
+Vector/IT Layers: 16 files
+Raster/Final Analysis Layers: 19 files
+
+TOTAL: 80 GIS Layers
